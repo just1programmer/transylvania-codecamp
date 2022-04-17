@@ -15,13 +15,13 @@ export default function Footer() {
         <Typography variant='h6' sx={{flexGrow:1}}>
            Copyright 2022 Transylvania Codecamp
         </Typography>
-        <IconButton color='inherit'>
+        <IconButton color='inherit' href='https://www.facebook.com'>
           <FacebookIcon/>
         </IconButton>
-        <IconButton color='inherit'>
+        <IconButton color='inherit' href='https://www.instagram.com'>
           <InstagramIcon/>
         </IconButton>
-        <IconButton color='inherit'>
+        <IconButton color='inherit' href='https://www.google.com'>
           <ShareIcon/>
         </IconButton>
       </Toolbar>
