@@ -3,19 +3,21 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Routes
 } from "react-router-dom";
 
 import WhatIsJava from './WhatIsJava'
 import VariablesAndComments from './VariablesAndComments';
-
+import Hello from './Hello';
 const WebPages = () => {
     return(
         <Router>
-            <Route exact path="/" component= {Home} />
-            <Route path = "/what-is-java" component = {WhatIsJava} />
-            <Route path = "/variables-and-comments" component = {VariablesAndComments} />
+            <Routes>
+                <Route exact path="/" element= {<Hello/>} />
+                <Route path = "/what-is-java"  element= {<WhatIsJava/>} />
+                <Route path = "/variables-and-comments" element = {<VariablesAndComments/>} />
+            </Routes>   
         </Router>
     );
 };
-export default Webpages;
+export default WebPages;

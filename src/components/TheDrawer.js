@@ -16,10 +16,10 @@ export default function TheDrawer() {
 
       return(
         <>
-        <Link href={listItem.page}>
+        <Link href={listItem.page} underline='none'>
         <ListItemButton href='/about'>
-            <ListItem>
-          <Typography variant='subtitle1' >
+            <ListItem disablePadding>
+          <Typography variant='h6' sx={{color:'#059AF0',fontFamily:'monospace'}} >
             {listItem.title}
           </Typography>
         </ListItem>
@@ -39,9 +39,10 @@ export default function TheDrawer() {
       </IconButton>
     <Drawer anchor='left'  open={isDrawerOpen} onClose={()=>setIsDrawerOpen(false)}>
           <Box p={2} className='drawerBox'  textAlign='center' role='presentation'>
-              <Typography variant='h6' sx={{textDecoration:'underline'}}>
+              <Typography variant='h4' sx={{textDecoration:'none' , fontFamily:'Kristen ITC'}}>
                  Topics Box
               </Typography>
+              <Divider/>
               <List>
                 {topicItems}
               </List>

@@ -1,50 +1,90 @@
 import React from 'react'
-import {Stack,Paper, Typography,IconButton} from '@mui/material'
+import {Stack,Paper, Typography,IconButton,Card,CardMedia,CardContent,Divider} from '@mui/material'
 import SchoolTwoToneIcon from '@mui/icons-material/SchoolTwoTone';
+import { Box } from '@mui/system';
+import './WhatIsJava.css'
 export default function WhatIsJava() {
   return (
     <Stack spacing={1} sx={{padding:'5vw'}}>
-    <Typography variant='h3' textAlign='center'>
-          Welcome to <IconButton  color='inherit' disableRipple disableTouchRipple disableFocusRipple> <SchoolTwoToneIcon sx={{fontSize:'3em'}} /></IconButton>Transylvania Codecamp
+
+    
+    <Typography variant='h2'>
+      Java Introduction☕
     </Typography>
-<Paper elevation={3} sx={{minHeight:'60vh',maxWidth:'90vw',padding:'3vw'}}>
-    <Typography variant="h6" color="initial">ur core Java programming tutorial is designed for students and working professionals. Java is an object-oriented, class-based, concurrent, secured and general-purpose computer-programming language. It is a widely used robust technology.
 
-What is Java?
-Java is a programming language and a platform. Java is a high level, robust, object-oriented and secure programming language.
+<Paper elevation={1} sx={{minHeight:'60vh',maxWidth:'90vw',padding:'3vw'}}>
 
-Java was developed by Sun Microsystems (which is now the subsidiary of Oracle) in the year 1995. James Gosling is known as the father of Java. Before Java, its name was Oak. Since Oak was already a registered company, so James Gosling and his team changed the name from Oak to Java.
+    
+        
 
-Platform: Any hardware or software environment in which a program runs, 
-ur core Java programming tutorial is designed for students and working professionals. Java is an object-oriented, class-based, concurrent, secured and general-purpose computer-programming language. It is a widely used robust technology.
+        <Stack direction='row' sx={{marginTop:'5vh',justifyContent:'space-evenly'}}>
 
-What is Java?
-Java is a programming language and a platform. Java is a high level, robust, object-oriented and secure programming language.
+          <Card className='theCard'>
+            <CardMedia
+            component='img'
+            image='https://media3.giphy.com/media/fwbZnTftCXVocKzfxR/200.webp?cid=ecf05e475l50emwlnh7nk9g0uzmo42w0phb71w94d4wfmb6m&rid=200.webp&ct=g'
+            />
+            <CardContent>
 
-Java was developed by Sun Microsystems (which is now the subsidiary of Oracle) in the year 1995. James Gosling is known as the father of Java. Before Java, its name was Oak. Since Oak was already a registered company, so James Gosling and his team changed the name from Oak to Java.
+              <Typography variant='h5' textAlign='center'>
+              Java ☕
+              </Typography>
+              <Divider/>
+            <Typography variant="body2" color="initial" p={2}>
+        <b>A high-level, class-based, object-oriented programming language </b>  that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let programmers <b>'write once, run anywhere'</b>. 
 
-Platform: Any hardware or software environment in which a program runur core Java programming tutorial is designed for students and working professionals. Java is an object-oriented, class-based, concurrent, secured and general-purpose computer-programming language. It is a widely used robust technology.
+        </Typography>
+            </CardContent>
+          </Card>
 
-What is Java?
-Java is a programming language and a platform. Java is a high level, robust, object-oriented and secure programming language.
+          <Card className='theCard'>
+          <CardMedia
+            component='img'
+            image='https://media0.giphy.com/media/V4NSR1NG2p0KeJJyr5/giphy.gif'
+            height='250'
+            />
+            <CardContent>
+            <Typography variant='h5' textAlign='center'> 
+              Compilation 😓
+              </Typography>
+              <Divider/>
+            <Typography variant="body2" color="initial" p={2} >
+           <b>Compiled Java code can run on all platforms that support Java without the need to recompile. </b> 
 
-Java was developed by Sun Microsystems (which is now the subsidiary of Oracle) in the year 1995. James Gosling is known as the father of Java. Before Java, its name was Oak. Since Oak was already a registered company, so James Gosling and his team changed the name from Oak to Java.
+            Java applications are typically compiled to bytecode that can run on any Java virtual machine (JVM) regardless of the underlying computer architecture.
 
-Platform: Any hardware or software environment in which a program runur core Java programming tutorial is designed for students and working professionals. Java is an object-oriented, class-based, concurrent, secured and general-purpose computer-programming language. It is a widely used robust technology.
+        </Typography>
+            </CardContent>
+          </Card>
 
-What is Java?
-Java is a programming language and a platform. Java is a high level, robust, object-oriented and secure programming language.
 
-Java was developed by Sun Microsystems (which is now the subsidiary of Oracle) in the year 1995. James Gosling is known as the father of Java. Before Java, its name was Oak. Since Oak was already a registered company, so James Gosling and his team changed the name from Oak to Java.
+          <Card className='theCard'>
+          <CardMedia
+            component='img'
+            image='https://media0.giphy.com/media/h408T6Y5GfmXBKW62l/200.webp?cid=ecf05e47z8x89zcfkyelxl8voqwdx45id2w4y25qaufxfccf&rid=200.webp&ct=g'
+            height='250'
+            />
+            <CardContent>
+            <Typography variant='h5' textAlign='center'>
+              Popularity❤️‍🔥 
+              </Typography>
+              <Divider/>
+            <Typography variant="body2" color="initial" p={2}>
+            <b>As of 2019, Java was one of the most popular programming languages in use according to GitHub</b>, particularly for client–server web applications, with a reported 9 million developers.
 
-Platform: Any hardware or software environment in which a program runur core Java programming tutorial is designed for students and working professionals. Java is an object-oriented, class-based, concurrent, secured and general-purpose computer-programming language. It is a widely used robust technology.
+            The syntax of Java is similar to C and C++, but has fewer low-level facilities than either of them.
 
-What is Java?
-Java is a programming language and a platform. Java is a high level, robust, object-oriented and secure programming language.
+        </Typography>
+            </CardContent>
+          </Card>
 
-Java was developed by Sun Microsystems (which is now the subsidiary of Oracle) in the year 1995. James Gosling is known as the father of Java. Before Java, its name was Oak. Since Oak was already a registered company, so James Gosling and his team changed the name from Oak to Java.
-
-Platform: Any hardware or software environment in which a program runis known as a platform. Since Java has a runtime environment (JRE) and API, it is called a platform.</Typography>
+        </Stack>
+        
+       
+   
+        
+      
+   
 
 </Paper>
 </Stack>
