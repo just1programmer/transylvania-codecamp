@@ -4,10 +4,14 @@ import Footer from './components/Footer'
 import Content from './components/Content'
 export default function App() {
   return (
-    <React.Fragment>
-        <Header/>
-        <Content/>
-        <Footer/>
-    </React.Fragment>
+      <React.Fragment>
+              <div className='app'>
+                    <Header/>
+                    <Footer/>
+                    <Content/>
+                </div>
+                
+      </React.Fragment>
+
   )
 }

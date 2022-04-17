@@ -14,7 +14,6 @@ export default function Header() {
             Transylvania Codecamp
         </Typography>
         <Avatar src='https://randomuser.me/api/portraits/men/35.jpg' className='myAvatar' size='small'>
-          
         </Avatar>
       </Toolbar>
     </AppBar>
