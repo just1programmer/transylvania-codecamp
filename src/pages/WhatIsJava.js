@@ -8,7 +8,7 @@ export default function WhatIsJava() {
     <Stack spacing={1} sx={{padding:'5vw'}}>
 
     
-    <Typography variant='h2'>
+    <Typography variant='h2' my={4}>
       Java Introduction☕
     </Typography>
 
@@ -17,7 +17,7 @@ export default function WhatIsJava() {
     
         
 
-        <Stack direction='row' sx={{marginTop:'5vh',justifyContent:'space-evenly'}}>
+        <Stack direction='row' sx={{marginTop:'5vh',justifyContent:'space-between'}}>
 
           <Card className='theCard'>
             <CardMedia
