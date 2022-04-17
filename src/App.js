@@ -7,8 +7,8 @@ export default function App() {
       <React.Fragment>
               <div className='app'>
                     <Header/>
-                    <Footer/>
                     <Content/>
+                    <Footer/>
                 </div>
                 
       </React.Fragment>
