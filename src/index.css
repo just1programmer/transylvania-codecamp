@@ -11,7 +11,7 @@ html {
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background-image: linear-gradient(90deg, #4eadec 0%, #46a6e3 100%);
+    background-image: linear-gradient(90deg, #c7deee 0%, #e3e7e9 100%);
     
   }
 
@@ -20,13 +20,13 @@ html {
   ::-webkit-scrollbar-thumb {
     
     
-    background-image: linear-gradient(to top, #399bc6, #00aec4, #00bda7, #45c775, #9ec93c);
-    border-radius: 5px;
+    background-image: linear-gradient(to top, #30576b, #216670, #229791, #126b75, #04365e);
+    border-radius: 25px;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background-image: linear-gradient(to top, #c5b61c, #b3c02a, #9ec93c, #e59f1c, #d6ab16 );
-    border-radius: 5px;
+    background-image: linear-gradient(to top, #329df5, #1fe0d0, #4ca2f8, rgb(110, 247, 217), #21a185 );
+    border-radius: 25px;
     
   }

@@ -1,3 +1,3 @@
-const topics=['java','mama',3,4,5,6];
+const topics=['Java Intro','Variables','Functions','Lambda Functions'];
 
 export default topics
