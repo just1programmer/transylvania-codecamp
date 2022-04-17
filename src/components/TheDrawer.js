@@ -1,10 +1,9 @@
 import React from 'react'
-import {Drawer,Box,Typography,IconButton,Divider,List,ListItem,ListItemButton} from '@mui/material'
+import {Drawer,Box,Typography,IconButton,Divider,List,ListItem,ListItemButton,Link} from '@mui/material'
 import { useState } from 'react'
 import MenuIcon from '@mui/icons-material/Menu';
 import data from '../javatopics'
 import './TheDrawer.css'
-
 
 
 
@@ -17,13 +16,15 @@ export default function TheDrawer() {
 
       return(
         <>
-         <ListItemButton>
+        <Link href={listItem.page}>
+        <ListItemButton href='/about'>
             <ListItem>
-          <Typography variant='subtitle1'>
-            {listItem}
+          <Typography variant='subtitle1' >
+            {listItem.title}
           </Typography>
         </ListItem>
         </ListItemButton>
+        </Link>
         <Divider/>
         </>
        
@@ -38,8 +39,8 @@ export default function TheDrawer() {
       </IconButton>
     <Drawer anchor='left'  open={isDrawerOpen} onClose={()=>setIsDrawerOpen(false)}>
           <Box p={2} className='drawerBox'  textAlign='center' role='presentation'>
-              <Typography variant='h6'>
-                  Topics Panel
+              <Typography variant='h6' sx={{textDecoration:'underline'}}>
+                 Topics Box
               </Typography>
               <List>
                 {topicItems}

@@ -1,7 +1,7 @@
 import React from 'react'
 import {Stack,Paper, Typography,IconButton} from '@mui/material'
 import SchoolTwoToneIcon from '@mui/icons-material/SchoolTwoTone';
-export default function Hello() {
+export default function WhatIsJava() {
   return (
     <Stack spacing={1} sx={{padding:'5vw'}}>
     <Typography variant='h3' textAlign='center'>
