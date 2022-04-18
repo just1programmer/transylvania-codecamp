@@ -11,8 +11,8 @@ export default function Header() {
       <Toolbar>
         <TheDrawer/>
          
-        <Typography variant='h3' textAlign='center' sx={{fontFamily:'monospace',flexGrow:1}}>
-        <IconButton  color='inherit' disableRipple disableTouchRipple disableFocusRipple> <SchoolTwoToneIcon sx={{fontSize:'3em'}} /></IconButton>Transylvania Codecamp
+        <Typography variant='h3' textAlign='center'  id='brand'>
+        <IconButton  color='inherit' disableRipple disableTouchRipple disableFocusRipple> <SchoolTwoToneIcon sx={{fontSize:'2em'}} /></IconButton>Transylvania Codecamp
     </Typography>
         <Avatar src='https://randomuser.me/api/portraits/men/35.jpg' className='myAvatar' size='small'>
         </Avatar>

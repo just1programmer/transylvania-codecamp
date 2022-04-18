@@ -12,7 +12,7 @@ export default function Footer() {
         <IconButton color='inherit'>
           <CopyrightIcon/>
         </IconButton>
-        <Typography variant='h6' sx={{flexGrow:1}}>
+        <Typography variant='h6'  id='copyright'>
            Copyright 2022 Transylvania Codecamp
         </Typography>
         <IconButton color='inherit' href='https://www.facebook.com'>

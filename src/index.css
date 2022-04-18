@@ -6,7 +6,7 @@ html {
 }
 
 ::-webkit-scrollbar {
-    width: 20px;
+    width: 0.7em;
   }
   
   /* Track */
@@ -29,4 +29,38 @@ html {
     background-image: linear-gradient(to top, #329df5, #1fe0d0, #4ca2f8, rgb(110, 247, 217), #21a185 );
     border-radius: 25px;
     
+  }
+
+
+
+  @media only screen and (max-width: 600px) {
+   
+    
+
+    ::-webkit-scrollbar {
+      width: 0.7em;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background-image: linear-gradient(90deg, #c7deee 0%, #e3e7e9 100%);
+      
+    }
+  
+  
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      
+      
+      background-image: linear-gradient(to top, #741a65, #80145f, #cc1395, #790760, #04365e);
+      border-radius: 25px;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background-image: linear-gradient(90deg, #7913b4 0%, #2e0b70 100%);
+      border-radius: 25px;
+      
+    }
+  
   }

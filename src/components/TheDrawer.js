@@ -15,18 +15,18 @@ export default function TheDrawer() {
   const topicItems = data.map((listItem)=> {
 
       return(
-        <>
-        <Link href={listItem.page} underline='none'>
+        <React.Fragment key={listItem.title}>
+        <Link href={listItem.page} underline='none' >
         <ListItemButton href='/about'>
-            <ListItem disablePadding>
-          <Typography variant='h6' sx={{color:'#059AF0',fontFamily:'monospace'}} >
+            <ListItem disablePadding  >
+          <Typography variant='h6' sx={{color:'#059AF0',fontFamily:'monospace'}}  >
             {listItem.title}
           </Typography>
         </ListItem>
         </ListItemButton>
         </Link>
         <Divider/>
-        </>
+        </React.Fragment>
        
       )
 
@@ -39,7 +39,7 @@ export default function TheDrawer() {
       </IconButton>
     <Drawer anchor='left'  open={isDrawerOpen} onClose={()=>setIsDrawerOpen(false)}>
           <Box p={2} className='drawerBox'  textAlign='center' role='presentation'>
-              <Typography variant='h4' sx={{textDecoration:'none' , fontFamily:'Kristen ITC'}}>
+              <Typography variant='h4' sx={{textDecoration:'none' , fontFamily:'Impact'}}>
                  Topics Box
               </Typography>
               <Divider/>
