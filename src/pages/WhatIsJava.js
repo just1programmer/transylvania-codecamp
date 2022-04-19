@@ -8,11 +8,7 @@ export default function WhatIsJava() {
     <Stack spacing={1} sx={{padding:'5vw'}}>
 
     
-<<<<<<< HEAD
     <Typography variant='h2' id='title'>
-=======
-    <Typography variant='h2' my={4}>
->>>>>>> a132fd96f42f5a25962107015c5e9ec2223f0ab8
       Java Introduction☕
     </Typography>
 
@@ -21,12 +17,8 @@ export default function WhatIsJava() {
     
         
 
-<<<<<<< HEAD
         <Grid container spacing={2} p={3}>
             <Grid item xs={12} sm={12} md={6} lg={4}>
-=======
-        <Stack direction='row' sx={{marginTop:'5vh',justifyContent:'space-between'}}>
->>>>>>> a132fd96f42f5a25962107015c5e9ec2223f0ab8
 
             <Card className='theCard'>
             <CardMedia
