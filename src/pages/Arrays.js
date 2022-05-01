@@ -29,7 +29,7 @@ export default function Arrays() {
             <CardContent>
 
               <Typography variant='h5' textAlign='center'>
-              Java ☕
+              Array ☕
               </Typography>
               <Divider/>
             <Typography variant="body2" color="initial" className='details'>
