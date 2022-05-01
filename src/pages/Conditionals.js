@@ -4,7 +4,7 @@ import SchoolTwoToneIcon from '@mui/icons-material/SchoolTwoTone';
 import { Box } from '@mui/system';
 import './CardAndVideo.css'
 import ReactPlayer from 'react-player';
-export default function WhatIsJava() {
+export default function Conditionals() {
   return (
     <Stack spacing={1} sx={{padding:'5vw'}}>
 

@@ -4,7 +4,7 @@ import SchoolTwoToneIcon from '@mui/icons-material/SchoolTwoTone';
 import { Box } from '@mui/system';
 import './CardAndVideo.css'
 import ReactPlayer from 'react-player';
-export default function WhatIsJava() {
+export default function Arrays() {
   return (
     <Stack spacing={1} sx={{padding:'5vw'}}>
 
@@ -95,9 +95,6 @@ url='https://www.youtube.com/watch?v=l9AzO1FMgM8&ab_channel=Fireship'
 controls={true}
 />
         
-      
-   
-
 </Paper>
 </Stack>
   )
