@@ -3,6 +3,7 @@ import {Stack,Paper, Typography,IconButton,Card,CardMedia,CardContent,Divider,Gr
 import SchoolTwoToneIcon from '@mui/icons-material/SchoolTwoTone';
 import { Box } from '@mui/system';
 import './WhatIsJava.css'
+import ReactPlayer from 'react-player';
 export default function WhatIsJava() {
   return (
     <Stack spacing={1} sx={{padding:'5vw'}}>
@@ -17,7 +18,7 @@ export default function WhatIsJava() {
     
         
 
-        <Grid container spacing={2} p={3}>
+        <Grid container spacing={2} p={2} my={10}>
             <Grid item xs={12} sm={12} md={6} lg={4}>
 
             <Card className='theCard'>
@@ -87,7 +88,12 @@ export default function WhatIsJava() {
           </Grid>
        
    
-
+<ReactPlayer 
+width='100%'
+height='700px'
+url='https://www.youtube.com/watch?v=l9AzO1FMgM8&ab_channel=Fireship'
+controls={true}
+/>
         
       
    
