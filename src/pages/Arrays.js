@@ -33,7 +33,7 @@ export default function Arrays() {
               </Typography>
               <Divider/>
             <Typography variant="body2" color="initial" className='details'>
-        <b>A high-level, class-based, object-oriented programming language </b>  that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let programmers <b>'write once, run anywhere'</b>. 
+        <b>Arrays are ........ high-level, class-based, object-oriented programming language </b>  that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let programmers <b>'write once, run anywhere'</b>. 
 
         </Typography>
             </CardContent>
