@@ -8,15 +8,15 @@ export default function WhatIsJava() {
   return (
     <Stack spacing={1} sx={{padding:'5vw'}}>
 
-    
-    <Typography variant='h2' id='title'>
-      Java Introduction☕
-    </Typography>
+
 
 <Paper elevation={4} sx={{minHeight:'60vh',maxWidth:'90vw',padding:'3vw'}}>
 
     
-        
+            
+    <Typography variant='h2' id='title' sx={{textDecoration:'underline', textUnderlinePosition:'under',textDecorationColor:'rgb(24, 108, 204)'}}>
+      Java Introduction☕
+    </Typography>
 
         <Grid container spacing={2} p={2} my={10}>
             <Grid item xs={12} sm={12} md={6} lg={4}>
@@ -84,10 +84,16 @@ export default function WhatIsJava() {
             </CardContent>
           </Card>
           </Grid>
-       
+         
           </Grid>
-       
+
+
+
+<Typography variant='h5' textAlign='center'>🔽 Down below , you can find a short video about what Java is and how it can be used 🔽</Typography>
+
    
+          <hr/>
+
 <ReactPlayer 
 width='100%'
 height='700px'
