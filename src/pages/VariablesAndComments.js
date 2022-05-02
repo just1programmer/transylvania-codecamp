@@ -12,7 +12,7 @@ import data from './accordionQuestions/variablesQuestions'
 console.log(data);
 
 export default function VariablesAndComments() {
-  const [questions,setQuestions]=useState(data)
+  const [variablesQuestions,setQuestions]=useState(data)
   return (
     <Stack spacing={1} sx={{padding:'5vw'}}>
 
@@ -98,7 +98,7 @@ export default function VariablesAndComments() {
           <div className='container'>
         <Typography variant='h3'>Q&A about Variables</Typography>
         <section className='info'>
-          {questions.map((question)=>{
+          {variablesQuestions.map((question)=>{
             return(
               <SingleQuestion key={question.id} {...question}/>
             )
@@ -116,7 +116,96 @@ controls={true}
 />
         
       
-   
+
+
+
+<Grid container spacing={2} p={2} my={10}>
+            <Grid item xs={12} sm={12} md={6} lg={4}>
+
+            <Card className='theCard'>
+            <CardMedia
+            component='img'
+            image='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX5Rj-STat3Pb7s7NRqBmLvmK0hp8O0OqF0g&usqp=CAU'
+            />
+            <CardContent>
+
+              <Typography variant='h5' textAlign='center'>
+              Java Comments😬
+              </Typography>
+              <Divider/>
+            <Typography variant="body2" color="initial" className='details'>
+        <b> The Java comments are the statements in a program that are not executed by the compiler and interpreter.</b> <br/> 
+        </Typography>
+            </CardContent>
+          </Card>
+            </Grid>
+         
+            <Grid item xs={12} sm={12} md={6} lg={4}>
+          <Card className='theCard'>
+          <CardMedia
+            component='img'
+            image='https://media.geeksforgeeks.org/wp-content/cdn-uploads/20191113114930/Comments.png'
+            height='300px'
+            />
+            <CardContent>
+            <Typography variant='h5' textAlign='center'> 
+              Single Line Comment 
+              </Typography>
+              <Divider/>
+            <Typography variant="body2" color="initial" className='details' >
+           <b> The single-line comment is used to comment only one line of the code. It is the widely used and easiest way of commenting the statements.
+
+Single line comments starts with two forward slashes (//). Any text in front of // is not executed by Java.</b> 
+
+            
+
+        </Typography>
+            </CardContent>
+          </Card>
+
+          </Grid>
+
+          <Grid item xs={12} sm={12} md={12} lg={4}>
+          <Card className='theCard' >
+          <CardMedia
+            component='img'
+            image='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc3h2wqq0eC3pFN_wVA4cmWfklKxl71y19zg&usqp=CAU'
+            height='250'
+            />
+            <CardContent>
+            <Typography variant='h5' textAlign='center'>
+              Multi line comment😄
+              </Typography>
+              <Divider/>
+            <Typography variant="body2" color="initial"  className='details'>
+            <b>The multi-line comment is used to comment multiple lines of code. It can be used to explain a complex code snippet or to comment multiple lines of code at a time (as it will be difficult to use single-line comments there).
+
+Multi-line comments are placed between /* and */. Any text between /* and */ is not executed by Java.</b>
+  
+        </Typography>
+            </CardContent>
+          </Card>
+          </Grid>
+       
+          </Grid>
+
+
+
+
+
+          <ReactPlayer 
+width='100%'
+height='700px'
+url='https://www.youtube.com/watch?v=yxIAXB1wk7w&ab_channel=AlexLee'
+controls={true}
+/>
+        
+
+
+
+
+
+
 
 </Paper>
 </Stack>
