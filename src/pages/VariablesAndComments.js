@@ -18,14 +18,18 @@ export default function VariablesAndComments() {
     <Stack spacing={1} sx={{padding:'5vw'}}>
 
     
-    <Typography variant='h2' id='title'>
-      Java Variables and Comments☕
-    </Typography>
+   
 
 <Paper elevation={4} sx={{minHeight:'60vh',maxWidth:'90vw',padding:'3vw'}}>
 
     
-        
+<Typography variant='h2' id='title' sx={{textDecoration:'underline',textUnderlinePosition:'under'}}>
+      Java Variables and Comments☕
+    </Typography> 
+
+    <Typography variant='h3' my={4}>
+    👌 Java Variables
+    </Typography> 
 
         <Grid container spacing={2} p={2} my={10}>
             <Grid item xs={12} sm={12} md={6} lg={4}>
@@ -95,7 +99,8 @@ export default function VariablesAndComments() {
        
           </Grid>
        
-        
+        <Typography variant='h5' textAlign='center'>🔽 Here are some frequently asked questions about Java Variables 🔽</Typography>
+
           <div className='container'>
         <Typography variant='h3'>Q&A about Variables</Typography>
         <section className='info'>
@@ -108,6 +113,7 @@ export default function VariablesAndComments() {
       </div>
 
 
+      <Typography variant='h5' textAlign='center' my={4}>🔽This is a video I strongly encourage you to watch , in order to better understand what Java variables are:</Typography>
 
 <ReactPlayer 
 width='100%'
@@ -118,7 +124,9 @@ controls={true}
         
       
 
-
+<Typography variant='h3' my={8}>
+👌Java Comments
+    </Typography> 
 
 <Grid container spacing={2} p={2} my={10}>
             <Grid item xs={12} sm={12} md={6} lg={4}>
@@ -192,6 +200,9 @@ Multi-line comments are placed between /* and */. Any text between /* and */ is 
 
 
 
+          <Typography variant='h5' textAlign='center' my={4}>🔽This is a video I strongly encourage you to watch , in order to better understand what Java comments are:</Typography>
+
+
 
 
           <ReactPlayer 
@@ -202,7 +213,8 @@ controls={true}
 />
         
 
-   
+<Typography variant='h5' textAlign='center' my={4}>🔽Below you can find some Q&A about comments:</Typography>
+
 <div className='container'>
         <Typography variant='h3'>Q&A about Comments</Typography>
         <section className='info'>
