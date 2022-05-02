@@ -8,11 +8,12 @@ import ReactPlayer from 'react-player';
 import SingleQuestion from './accordionQuestions/variablesQuestion';
 
 import data from './accordionQuestions/variablesQuestions'
-
+import questions from './accordionQuestions/commentsQuestions'
 console.log(data);
 
 export default function VariablesAndComments() {
   const [variablesQuestions,setQuestions]=useState(data)
+  const [commentsQuestions,setCommentsQuestions]=useState(questions)
   return (
     <Stack spacing={1} sx={{padding:'5vw'}}>
 
@@ -201,6 +202,17 @@ controls={true}
 />
         
 
+   
+<div className='container'>
+        <Typography variant='h3'>Q&A about Comments</Typography>
+        <section className='info'>
+          {commentsQuestions.map((question)=>{
+            return(
+              <SingleQuestion key={question.id} {...question}/>
+            )
+          })}
+        </section>
+      </div>
 
 
 

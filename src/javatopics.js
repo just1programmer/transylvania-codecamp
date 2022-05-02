@@ -1,6 +1,6 @@
 
 const theTopics=[{
-    title:'What is Java',
+    title:'What is Java?',
     page:'/what-is-java',
 },
 {
