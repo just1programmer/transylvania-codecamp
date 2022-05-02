@@ -1,16 +1,24 @@
-import React from 'react'
+import React,{useState} from 'react'
 import {Stack,Paper, Typography,IconButton,Card,CardMedia,CardContent,Divider,Grid} from '@mui/material'
 import SchoolTwoToneIcon from '@mui/icons-material/SchoolTwoTone';
 import { Box } from '@mui/system';
 import './CardAndVideo.css'
+import './variablesAndQuestions.css'
 import ReactPlayer from 'react-player';
+import SingleQuestion from './accordionQuestions/variablesQuestion';
+
+import data from './accordionQuestions/variablesQuestions'
+
+console.log(data);
+
 export default function VariablesAndComments() {
+  const [questions,setQuestions]=useState(data)
   return (
     <Stack spacing={1} sx={{padding:'5vw'}}>
 
     
     <Typography variant='h2' id='title'>
-      Java Introduction☕
+      Java Variables and Comments☕
     </Typography>
 
 <Paper elevation={4} sx={{minHeight:'60vh',maxWidth:'90vw',padding:'3vw'}}>
@@ -86,7 +94,20 @@ export default function VariablesAndComments() {
        
           </Grid>
        
-   
+        
+          <div className='container'>
+        <Typography variant='h3'>Q&A about Variables</Typography>
+        <section className='info'>
+          {questions.map((question)=>{
+            return(
+              <SingleQuestion key={question.id} {...question}/>
+            )
+          })}
+        </section>
+      </div>
+
+
+
 <ReactPlayer 
 width='100%'
 height='700px'
