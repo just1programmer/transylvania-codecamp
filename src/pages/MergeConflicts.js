@@ -10,7 +10,7 @@ export default function MergeConflicts() {
 
     
     <Typography variant='h2' id='title'>
-      Java Introduction☕
+      Java Introductions☕
     </Typography>
 
 <Paper elevation={4} sx={{minHeight:'60vh',maxWidth:'90vw',padding:'3vw'}}>
