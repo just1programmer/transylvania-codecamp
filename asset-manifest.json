@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/transylvania-codecamp/static/css/main.933b7a56.css",
+    "main.js": "/transylvania-codecamp/static/js/main.588816fd.js",
+    "index.html": "/transylvania-codecamp/index.html",
+    "main.933b7a56.css.map": "/transylvania-codecamp/static/css/main.933b7a56.css.map",
+    "main.588816fd.js.map": "/transylvania-codecamp/static/js/main.588816fd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.933b7a56.css",
+    "static/js/main.588816fd.js"
+  ]
+}
